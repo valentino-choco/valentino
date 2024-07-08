@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Oncle</title>
+
+    <link rel="shortcut icon" href="./static/favicon/moai_android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/moai_apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/moai_favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/moai_favicon-16x16.png">
+
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Valentin</h1>
+        <p>Welcome to my personal website!</p>
+        <img src="{{ url_for('static', filename='valentin_square.jpg') }}" alt="Valentin" class="profile-img">
+    </header>
+    
+    <div class="container">
+        <div class="contact">
+            <section>
+                <h2>Get In Touch</h2>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='gmail.png') }}" alt="Email Icon">
+                    <div class="email-container">
+                        <div class="email">
+                            <p>valentin.oncle@student.isae-supaero.fr</p>
+                            <img src="{{ url_for('static', filename='french_flag.png') }}" alt="French Flag" class="flag-icon">
+                        </div>
+                        <div class="email">
+                            <p>valentio@umich.edu</p>
+                            <img src="{{ url_for('static', filename='us_flag.png') }}" alt="US Flag" class="flag-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='apple.png') }}" alt="Phone Icon">
+                    <p>+33 6 42 04 84 31</p>
+                </div>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn Icon">
+                    <p><a href="https://www.linkedin.com/in/valentin-oncle/" target="_blank">Valentin Oncle</a></p>
+                </div>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='instagram.png') }}" alt="Instagram Icon">
+                    <p><a href="https://www.instagram.com/?hl=en" target="_blank">valenttttin</a></p>
+                </div>
+            </section>
+        </div>
+        <div class="main-content">
+            <div class="content">
+                <section>
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Valentin, a 21-year-old French student pursuing a double degree between 
+                    <a href="https://www.isae-supaero.fr/en/" target="_blank">SupAero</a> in France and 
+                    the <a href="https://umich.edu/" target="_blank">University of Michigan</a> in the US. 
+                    My passion lies in the observation and exploration of the Universe, which fuels my 
+                    enthusiasm for both astronomy and mathematics. When I'm not delving into the mysteries of 
+                    space, you can often find me scaling new heights through my love of climbing!</p>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+                    <div class="timeline-container">
+                        <div class="timeline">
+                            <ul>
+                            <li>
+                                <span>2020-2022</span>
+                                <div class="content">
+                                <h3 style="margin-bottom: 0px; color: #34e034;">Classes Préparatoires aux Grandes Écoles</h3>
+                                <h3 style="margin-top: 0px; color: #34ace0;"><a href="https://fr.wikipedia.org/wiki/Lyc%C3%A9e_Descartes_(Tours)" target="_blank" style="color: #34ace0;">Lycée Descartes</a>, Tours, France</h3>
+                                <div class="timeline-item">
+                                    <img src="./static/descartes_resized.jpg" alt="Image Description">
+                                    <div class="overlay">
+                                        <p>
+                                            After high school, I completed a rigorous two-year 'Classes Préparatoires aux Grandes Écoles' program, preparing the best high school 
+                                            students for entrance exams 
+                                            at top French Grandes Écoles like Polytechnique, Centrale Paris, and SupAero.
+                                        </p>
+                                        <p>
+                                            Despite the challenging workload, my passion for space exploration led me to excel in the exams, 
+                                            ranking in the top 5%. I chose to continue my studies at SupAero to further pursue my 
+                                            interest in aerospace engineering and contribute to space exploration.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>2022-2026</span>
+                                <div class="content">
+                                <h3 style="margin-bottom: 0px; color: #34e034;">BS, MS Aerospace Engineering</h3>
+                                <h3 style="margin-top: 0px; color: #34ace0;"><a href="https://www.isae-supaero.fr/en/" target="_blank" style="color: #34ace0;">SupAero</a>, Toulouse, France</h3>
+                                <div class="timeline-item">
+                                    <img src="./static/mirage3_resized.jpeg" alt="Image Description">
+                                    <div class="overlay">
+                                        <p>
+                                            After completing the 'Classes Préparatoires aux Grandes Écoles', I chose to 
+                                            attend SupAero, the best aerospace engineering school in France. Here, I'm 
+                                            engaged in a rigorous academic program that includes advanced courses in fluid dynamics, 
+                                            applied mathematics, physics, and computer science.
+                                        </p>
+                                        <p>Beyond the classroom, I'm actively involved in various extracurricular activities: I serve 
+                                            as the President of both the Astronomy Club and the Chocolate Club! Additionally, I have 
+                                            participated in the rocket club, known as 'Scube'.
+                                        </p>
+                                        <p>
+                                            I also pursue a variety of sports, including climbing, table tennis, and speleology.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>2024-2025</span>
+                                <div class="content">
+                                <h3 style="margin-bottom: 0px; color: #34e034;">MS Climate & Space Sciences</h3>
+                                <h3 style="margin-top: 0px; color: #34ace0;"><a href="https://umich.edu/" target="_blank" style="color: #34ace0;">University of Michigan</a>, Ann Arbor, USA</h3>
+                                <div class="timeline-item">
+                                    <img src="./static/michigan_stadium_resized.jpg" alt="Image Description">
+                                    <div class="overlay">
+                                        <p>
+                                            With the soul of an adventurer, I've always aspired to study abroad, 
+                                            particularly in the US, which is a leader in space research and industry.
+                                            Additionally, pursuing a Master of Science (MS) program in the US will 
+                                            complement my engineering degree from France exceptionally well, 
+                                            thanks to its research-oriented courses.
+                                        </p>
+                                        <p>
+                                            This ambition motivated me to apply for a double degree program with the MS in Climate & Space 
+                                            Sciences at the University of Michigan while studying at SupAero.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>What I've done</h2>
+                    <div class="timeline-container">
+                        <div class="timeline">
+                            <ul>
+                            <li>
+                                <span>May-June 2023</span>
+                                <div class="content">
+                                <h3 style="margin-bottom: 0px; color: #34e034;">Rocket Launching in Sweden with <a href="https://cnes.fr/en" target="_blank" style="color: #34e034;">CNES</a>!</h3>
+                                <h3 style="margin-top: 0px; color: #34ace0;"><a href="https://sscspace.com/esrange/" target="_blank" style="color: #34ace0;">Esrange Space Center</a>, Sweden</h3>
+                                <div class="timeline-item">
+                                    <img src="./static/sera4_resized.jpg" alt="Image Description">
+                                    <div class="overlay">
+                                        <p>As a first-year student at SupAero, I had the privilege of participating in a CNES-sponsored project 
+                                            known as Sera-4. The project's goal was to design and launch a small rocket, a collaborative effort 
+                                            involving students and engineers from CNES and ArianeGroup. Our successful rocket launch took place 
+                                            in early June 2023 at the Esrange Space Center in Sweden.
+                                        </p>
+                                        <p>
+                                            I was there for one week, in the very north of Sweden, where the sun never sets at this time of 
+                                            the year as it is above the Polar Circle!
+                                        </p>
+                                        <!-- <p>
+                                            It was an amazing experience, which helped me learn how 
+                                            engineering projects work, how to solve tough problems even when they seemed impossible, and how to 
+                                            handle the stress right before lift-off.
+                                        </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>June-July 2023</span>
+                                <div class="content">
+                                <h3 style="margin-bottom: 0px; color: #34e034;">Internship at Pic du Midi Observatory</h3>
+                                <h3 style="margin-top: 0px; color: #34ace0;"><a href="https://www.omp.eu/missions/appui-a-la-recherche/observatoire-du-pic-du-midi/" target="_blank" style="color: #34ace0;">Pic du Midi</a>, Pyrenees, France</h3>
+                                <div class="timeline-item">
+                                    <img src="./static/pic_du_midi_resized.jpg" alt="Image Description">
+                                    <div class="overlay">
+                                        <p>
+                                            At the end of my first year at SupAero, I completed a one-month internship at the Observatory Midi-Pyrenees, 
+                                            specifically at the Pic du Midi Observatory. I spent days living atop this mountain at 3000 m (9800 ft) of 
+                                            altitude, in a place isolated from the world!
+                                        </p>
+                                        <p>
+                                            During the nights, I observed the skies using the Bernard 
+                                            Lyot Telescope, the largest telescope on French soil. During the days, I enjoyed the breathtaking mountain 
+                                            landscapes above the clouds and occasionally went near the coronagraph, a specialized telescope used for 
+                                            observing the sun. 
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>March-July 2024</span>
+                                <div class="content">
+                                <h3 style="margin-bottom: 0px; color: #34e034;">Research internship in Planetology</h3>
+                                <h3 style="margin-top: 0px; color: #34ace0;"><a href="https://www.irap.omp.eu/en/homepage-en/" target="_blank" style="color: #34ace0;">IRAP</a>, Toulouse, France</h3>
+                                <div class="timeline-item">
+                                    <img src="./static/moment0_resized.jpg" alt="Image Description">
+                                    <div class="overlay">
+                                        <p>After high school, I completed a rigorous two-year 'Classes Préparatoires aux Grandes Écoles' program, preparing the best high school 
+                                            students for entrance exams 
+                                            at top French Grandes Écoles like Polytechnique, Centrale Paris, and SupAero. 
+                                            Despite the challenging workload, my passion for space exploration led me to excel in the exams, 
+                                            ranking in the top 5%. I chose to continue my studies at SupAero to further pursue my 
+                                            interest in aerospace engineering and contribute to space exploration.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>My Skills/What I can do/What I'm good at/Xhat was I made for</h2>
+                    <ul>
+                        <li>Chocolate</li>
+                        <li>Gâteau basque</li>
+                        <li>Climbing</li>
+                        <li>Chocolate</li>
+                        <li>Gâteau basque</li>
+                        <li>Climbing</li>
+                    </ul>
+                </section>
+
+
+    <button class="chatbot-button" onclick="toggleChatbot()">
+        <div class="chat-message">Chat with me!</div>
+        <!-- <img src="{{ url_for('static', filename='chatbot.jpg') }}" alt="Chatbot"> -->
+        <img src="{{ url_for('static', filename='wired-lineal-981-consultation.gif') }}" alt="Chatbot">
+    </button>
+
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">Chat with me!</div>
+        <div class="chatbot-body" id="chat-container">
+            <div class="message">Welcome to my chatbot!</div>
+            <div id="suggestions" class="suggestions">
+                <button onclick="useSuggestion('Hello!')">Hello!</button>
+                <button onclick="useSuggestion('Who are you?')">Who are you?</button>
+                <button onclick="useSuggestion('What\'s your favorite cake?')">What's your favorite cake?</button>
+            </div>
+        </div>
+        <form id="chat-form" class="chatbot-footer">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="./static/js/script.js"></script>
+
+    <footer>
+        <p>a Valentin Oncle production</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Oncle</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Valentin</h1>
+        <p>Welcome to my personal website!</p>
+        <img src="{{ url_for('static', filename='valentin_square.jpg') }}" alt="Valentin" class="profile-img">
+    </header>
+    
+    <div class="main-content container">
+        <div class="content">
+            <section>
+                <h2>About Me</h2>
+                    <p>Hello! I'm Valentin, a 21-year-old French student pursuing a double degree between 
+                    <a href="https://www.isae-supaero.fr/en/" target="_blank">SupAero</a> in France and 
+                    the <a href="https://umich.edu/" target="_blank">University of Michigan</a> in the US. 
+                    My passion lies in the observation and exploration of the Universe, which fuels my 
+                    enthusiasm for both astronomy and mathematics. When I'm not delving into the mysteries of 
+                    space, you can often find me scaling new heights through my love of climbing!</p>
+            </section>
+            <section>
+                <h2>My Skills</h2>
+                <ul>
+                    <li>Chocolate</li>
+                    <li>Gâteau basque</li>
+                    <li>Climbing</li>
+                </ul>
+            </section>       
+        </div>
+        <div class="contact">
+            <section>
+                <h2>Get In Touch</h2>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='gmail.png') }}" alt="Email Icon">
+                    <div class="email-container">
+                        <div class="email">
+                            <p>valentin.oncle@student.isae-supaero.fr</p>
+                            <img src="{{ url_for('static', filename='french_flag.png') }}" alt="French Flag" class="flag-icon">
+                        </div>
+                        <div class="email">
+                            <p>valentio@umich.edu</p>
+                            <img src="{{ url_for('static', filename='us_flag.png') }}" alt="US Flag" class="flag-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='apple.png') }}" alt="Phone Icon">
+                    <p>+33 6 42 04 84 31</p>
+                </div>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn Icon">
+                    <p><a href="https://www.linkedin.com/in/valentin-oncle/" target="_blank">Valentin Oncle</a></p>
+                </div>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='instagram.png') }}" alt="LinkedIn Icon">
+                    <p><a href="https://www.instagram.com/?hl=en" target="_blank">valenttttin</a></p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <button class="chatbot-button" onclick="toggleChatbot()">
+        <div class="chat-message">Chat with me!</div>
+        <img src="{{ url_for('static', filename='chatbot.jpg') }}" alt="Chatbot">
+    </button>
+
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            Chat with me!
+        </div>
+        <div class="chatbot-body" id="chat-container">
+            <div class="message">Welcome on my chatbot!</div>
+        </div>
+        <form id="chat-form" class="chatbot-footer">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="./static/js/script.js"></script>
+</body>
+</html> -->

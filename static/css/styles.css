@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #132437;
+            /* #08d1c0 */
+            background-image: url('../planet-uranus-by-voyager-2-in-1986-cropped.jpg');
+            /* background-image: url('../random_image.png'); */
+            background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'élément */
+            background-position: center; /* Centre l'image dans l'élément */
+            background-repeat: no-repeat; /* Empêche la répétition de l'image */
+        }
+        header {
+            background-color: #132437;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .profile-img {
+            position: absolute; /* Position the image absolutely */
+            top: 43%; /* Position the image 50% from the top of the header */
+            left: 20px; /* 20px from the right edge of the header */
+            transform: translateY(-150%); /* Adjust positioning to center vertically */
+            border-radius: 50%;
+            max-width: 175px; /* Adjust size as needed */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 3px solid #fff; /* Optional: Add a border to make it stand out */
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #132437;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 850px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px; /* Augmenter la largeur maximale */
+            margin: 0 auto;
+            padding: 0 20px; /* Ajouter du padding pour les marges */
+        }
+        
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+        /* .profile-img {
+            border-radius: 50%;
+            max-width: 200px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        } */
+        section p {
+            text-align: justify;
+            text-justify: inter-word; /* Ensure proper justification */
+            margin: 0; /* Remove default margin to align text properly */
+        }
+        section a {
+            color: #fff; /* Ensure link color matches your theme */
+            text-decoration: none;
+        }
+        section a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        /* section h2 {
+            transition: transform 0.3s ease;
+        }
+        .section h2:hover {
+            transform: scale(1.1);
+        } */
+        /* .button {
+            background-color: #132437;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #132437;
+        } */
+        .content {
+            flex: 3;
+        }
+        .contact {
+            flex: 1;
+            max-width: 300px;
+            background-color: #132437;
+            padding: 0px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+
+
+
+
+
+        
+        
+        body {
+            background-color: #121212; /* Dark background for the whole page */
+            color: #ffffff; /* White text color for better contrast */
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .chatbot-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00000000;
+            /* color: white; */
+            border: none;
+            padding: 1px 1px;
+            border-radius: 0%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .chatbot-button img {
+            width: 70px;
+            height: 70px;
+            border-radius: 0%;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+            transition: transform 0.3s ease;
+        }
+        
+        .chatbot-button img:hover {
+            transform: scale(1.5);
+        }
+        
+        .chatbot-container {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 350px;
+            max-height: 400px;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+        }
+        
+        .chatbot-header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .chatbot-body {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            background-color: #1e1e1e;
+        }
+        
+        .chatbot-footer {
+            padding: 10px;
+            background-color: #292929;
+            display: flex;
+            border-top: 1px solid #333;
+        }
+        
+        .chatbot-footer input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+            color: white;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .chatbot-footer button {
+            background-color: #3a3a3a;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .chatbot-footer button:hover {
+            background-color: #505050;
+        }
+        
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #2e2e2e;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 16px;
+        }
+        
+        .user-message {
+            text-align: right;
+            background: linear-gradient(135deg, #203a43, #077966);
+        }
+        
+        .bot-message {
+            text-align: left;
+            background-color: #3a3a3a;
+        }
+        .chatbot-body .image-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .chatbot-body .image-container img {
+            max-width: 100%;
+            max-height: 200px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+
+        
+        .suggestions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 10px;
+        }
+        
+        .suggestions button {
+            /* background-color: #077966; */
+            background: linear-gradient(135deg, #203a43, #077966);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-family: inherit;
+            font-size: 16px;
+        }
+        
+        .suggestions button:hover {
+            background: linear-gradient(135deg, #203a43, #077966);
+            transform: scale(1.05);
+        }
+        
+        .suggestions button:active {
+            background: linear-gradient(135deg, #203a43, #077966);
+        }
+        
+        .chat-message {
+            position: absolute;
+            top: -45px; /* Adjust this value to position the message */
+            left: 5%;
+            transform: translateX(-50%);
+            background-color: #e29d27f3;
+            color: white;
+            padding: 7px 14px;
+            border-radius: 5px;
+            font-size: 16px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* cursor: pointer;
+            transition: transform 0.3s ease; */
+            transition: opacity 0.3s ease;
+        }
+        /* .chat-message:hover {
+            transform: scale(1.1);
+        } */
+        
+        .chat-message::after {
+            content: '';
+            position: absolute;
+            bottom: -15px; /* Position the tip of the speech bubble */
+            left: 75%;
+            transform: translateX(-50%);
+            border-width: 8px;
+            border-style: solid;
+            border-color: #e29d27f3 transparent transparent transparent;
+        }
+        /* .chat-message::after:hover {
+            transform: scale(1.1);
+        } */
+        .chatbot-button:hover .chat-message {
+            opacity: 0;
+        }
+        
+
+
+
+
+
+
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease;
+        }
+        .contact-item:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-item img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        .contact-item p {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .contact-item a {
+            color: #fff; /* Ensure link color matches your theme */
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        .email-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px; /* Adjust spacing between email addresses */
+        }
+
+        .email p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flag-icon {
+            margin-right: 5px;
+            margin-left: 5px;
+            width: 16x;
+            height: 16px;
+        }
+
+        footer {
+            background-color: #132437;
+            color: white;
+            text-align: center;
+            font-size: 7px;
+            height: 16px;
+            padding: 0px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+
+
+
+
+
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+        .timeline-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            max-width: 100%;
+            padding: 16px;
+            background-color: #132437;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .timeline {
+            background-color: #072736;
+            color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+            display: inline-block; /* Ensure it stays inline and scrollable */
+            white-space: nowrap; /* Prevent items from wrapping */
+            max-width: 200%;
+        }
+        .timeline-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            max-width: 100%; /* Ajustez la largeur maximale de l'élément */
+        }
+        
+        .timeline-item img {
+            width: 100%;
+            height: auto; /* Assurez-vous que la hauteur s'ajuste proportionnellement */
+            display: block; /* Pour s'assurer que l'image se comporte correctement en tant qu'élément de bloc */
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.3s ease;
+        }
+        
+        .timeline-item .overlay {
+            position: absolute;
+            top: -6px;
+            left: 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #071f2a; /* Couleur de fond semi-transparente */
+            opacity: 0;
+            color: #fff;
+            text-align: center;
+            transition: opacity 0.3s ease;
+        }
+        
+        .timeline-item:hover img {
+            opacity: 0; /* Faire disparaître l'image au survol */
+        }
+        
+        .timeline-item:hover .overlay {
+            opacity: 1; /* Faire apparaître le texte au survol */
+        }
+        
+        .timeline-item .overlay h3,
+        .timeline-item .overlay p {
+            margin: 0;
+            padding: 5px;
+        }
+        
+        .timeline ul {
+            display: inline-flex; /* Ensure all items stay in a single line */
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .timeline ul li {
+            flex: none;
+            width: 325px;
+            padding: 20px;
+            position: relative;
+            cursor: pointer;
+            transition: .5s;
+            border-top: 2px solid #094a68;
+            margin-right: 0px;
+            white-space: normal; /* Allow text to wrap */
+            display: inline-block; /* Ensure each item is a block in inline context */
+        }
+        .timeline ul li:last-child {
+          margin-right: 0;
+        }
+        .timeline ul li span {
+          display: inline-block;
+          background-color: #1685b8;
+          border-radius: 25px;
+          padding: 2px 5px;
+          font-size: 15px;
+          text-align: center;
+        }
+        .timeline ul li .content {
+          max-width: 100%; /* Ensure content fills the box */
+        }
+        .timeline ul li .content h3 {
+          /* color: #34ace0; */
+          font-size: 17px;
+          padding-top: 5px;
+          /* margin-bottom: 0px;
+          margin-top: 0px; */
+        }
+        .timeline ul li .content p {
+          padding: 5px 0px 15px 0px;
+          font-size: 15px;
+          overflow: hidden;
+          text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+        }
+        .timeline ul li:before {
+          position: absolute;
+          content: '';
+          width: 13px;
+          height: 13px;
+          background-color: #34ace0;
+          border-radius: 50%;
+          left: -6px;
+          top: -8px;
+          transition: .5s;
+        }
+        .timeline ul li:hover {
+          background-color: #071f2a;
+        }
+        .timeline ul li:hover:before {
+          background-color: #0F0;
+          box-shadow: 0px 0px 10px 2px #0F0;
+        }
+        @media (max-width: 600px) {
+          .timeline {
+            display: block;
+            overflow-x: hidden;
+          }
+          .timeline ul {
+            display: block;
+          }
+          .timeline ul li {
+            display: block;
+            width: auto; /* Ensure it takes full width in vertical layout */
+            margin-bottom: 20px;
+          }
+          .timeline ul li:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* Pour les navigateurs Webkit (Chrome, Safari) */
+        .timeline-container::-webkit-scrollbar {
+            width: 12px; /* Largeur de la barre de défilement */
+            height: 12px; /* Hauteur de la barre de défilement horizontale */
+        }
+
+        .timeline-container::-webkit-scrollbar-thumb {
+            background-color: #34e034; /* Couleur de la poignée de défilement */
+            border-radius: 6px; /* Bordures arrondies */
+            border: 3px solid #132437; /* Bordure pour donner un effet d'espace */
+        }
+
+        .timeline-container::-webkit-scrollbar-track {
+            background-color: #071f2a; /* Couleur de la piste */
+            border-radius: 6px;
+        }
+
