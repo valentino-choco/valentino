@@ -204,7 +204,7 @@
         }
         
         .chatbot-footer button {
-            background-color: #3a3a3a;
+            background-color: #2c5364;
             color: white;
             border: none;
             padding: 10px;
@@ -215,7 +215,7 @@
         }
         
         .chatbot-footer button:hover {
-            background-color: #505050;
+            background-color: #607c88;
         }
         
         .message {
@@ -472,7 +472,7 @@
         }
         .timeline ul li {
             flex: none;
-            width: 325px;
+            width: 350px;
             padding: 20px;
             position: relative;
             cursor: pointer;
