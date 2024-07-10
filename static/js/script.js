@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = -1;
     let firstMessageSent = false;
 
+    // Script to set initial scrollbar position at 25%
+    const timelineContainer = document.getElementById('timeline-container');
+    if (timelineContainer) {
+        timelineContainer.scrollLeft = timelineContainer.scrollWidth * 0.23;
+    }
+
     chatForm.addEventListener('submit', function(event) {
         event.preventDefault();
         const userMessage = userInput.value.trim();

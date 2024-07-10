@@ -144,9 +144,38 @@
 
                 <section>
                     <h2>What I've done</h2>
-                    <div class="timeline-container">
+                    <div id="timeline-container" class="timeline-container">
                         <div class="timeline">
                             <ul>
+                            <li>
+                                <span>November 2018</span>
+                                <div class="content">
+                                <h3 style="margin-bottom: 0px; color: #34e034;">Humanitarian trip to Morocco</h3>
+                                <h3 style="margin-top: 0px; color: #34ace0;">Atlas Mountains, Morocco</h3>
+                                <div class="timeline-item">
+                                    <img src="./static/atlas_mountains_resized.jpg" alt="Image Description">
+                                    <div class="overlay">
+                                        <p>During high school, I participated in a humanitarian trip to Morocco with the association 
+                                            MonPlaisir Solidarité. Accompanied by dentists and nurses, we visited remote villages in the 
+                                            Atlas Mountains, north of Ouarzazate. Our mission was to treat children's dental issues, 
+                                            educate them on oral hygiene, and distribute toothbrushes and toothpaste. 
+                                        </p>
+                                        <p>
+                                            It was an unforgettable experience: the excitement of never knowing where we would 
+                                            sleep each night, the joy of meeting the children in these remote villages, savoring 
+                                            Morocco's delicious couscous and pastries, and gazing at the stunning night sky!
+                                        </p>
+                                        <!-- <p>
+                                            It was an amazing experience, which helped me learn how 
+                                            engineering projects work, how to solve tough problems even when they seemed impossible, and how to 
+                                            handle the stress right before lift-off.
+                                        </p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+
                             <li>
                                 <span>May-June 2023</span>
                                 <div class="content">
@@ -173,6 +202,7 @@
                                     </div>
                                 </div>
                             </li>
+                        
                             <li>
                                 <span>June-July 2023</span>
                                 <div class="content">
@@ -220,6 +250,17 @@
                 </section>
 
                 <section>
+                    <h2>CV <a href="./static/CV_Valentin_Oncle.pdf" class="download-link" download style="font-size: medium;">Download PDF</a></h2>
+                    <div class="pdf-container">
+                        <iframe src="./static/CV_Valentin_Oncle.pdf"></iframe>
+                        <!-- <div class="navigation">
+                            <button class="button">Précédent</button>
+                            <button class="button">Suivant</button>
+                        </div> -->
+                    </div>
+                </section>
+
+                <section>
                     <h2>My Skills/What I can do/What I'm good at/Xhat was I made for</h2>
                     <ul>
                         <li>Chocolate</li>
@@ -249,7 +290,7 @@
             </div>
         </div>
         <form id="chat-form" class="chatbot-footer">
-            <input type="text" id="user-input" placeholder="Type your message...">
+            <input type="text" id="user-input" autocomplete="off" placeholder="Type your message...">
             <button type="submit">Send</button>
         </form>
     </div>
